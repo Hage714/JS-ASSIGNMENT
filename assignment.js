@@ -1,13 +1,17 @@
 //FUNCTIONS
 //Create a function that takes a string as input and returns 'true' if it's a palindrome,otherwise 'false'  (NOT UNDERSTOOD)
-//const isPalindrome = (string) => {
-    //const reverseString = string.split("").reverse().join("")
-    //if (string === reverseString) {
+const isPalindrome = (string) => {
+    const reverseString = string.split("").reverse().join("")
+    if (string === reverseString) {
         return true
     } else {
         return false
     }
+
 }
+const result = isPalindrome("raceca")
+console.log(result)
+
 
 //An arrow function that doubles a number
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]
@@ -17,7 +21,11 @@ console.log(multiplyByTwo)
 
 
 //A function that takes an array of numbers and returns its average value  (NOT UNDERSTOOD)
-//const calculateAverage =numbers.reduce (numbers => ((a, b) => a + b) / numbers.length)
+const calculateAverage =(numbers)=> {
+    let sum = numbers.reduce((prevValue, nextValue) => prevValue + nextValue,0)
+    return sum/numbers.length
+    
+}
 console.log(calculateAverage([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 //A function that capitalizes the first letter
@@ -74,10 +82,10 @@ while (count >= 1) {
 }
 
 //A do while loop to repeatedly prompt the user for a number until they enter a valid positive number (NOT UNDERSTOOD!)
-//do {
-    //console.log("Positive number")
-    //const posNumber = prompt("Enter a positive number")
-//} while (isNaN(posNumber) || posNumber <= 0)
+do {
+    console.log("Positive number")
+    const posNumber = prompt("Enter a positive number")
+} while (isNaN(posNumber) || posNumber <= 0)
 
 
 //ARRAYS
